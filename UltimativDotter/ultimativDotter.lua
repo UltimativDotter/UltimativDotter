@@ -3,7 +3,7 @@
 
 
 
-
+--casts all dots in a special order
 function castAllDots()
 
 first = Mop:new();
