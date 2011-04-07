@@ -1,0 +1,28 @@
+﻿<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Frame.lua" />
+	<MessageFrame name="MessageFrame1" parent="Frame1" toplevel="true" font="" fade="false">
+		<FontString inherits="ErrorFont" justifyH="CENTER" />
+		<Size>
+			<AbsDimension x="203" y="344" />
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset x="151" y="-198" />
+			</Anchor>
+		</Anchors>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
+		<Scripts>
+			<OnLoad>MessageFrame1_OnLoad();</OnLoad>
+		</Scripts>
+	</MessageFrame>
+</Ui>

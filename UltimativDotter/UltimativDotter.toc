@@ -1,0 +1,10 @@
+## Author: Manuel
+## Interface: 30000
+## Title: UltimativDotter
+## Version: 1.0
+## WowPath: C:\Games\World of Warcraft
+ultimativDotter.lua
+Spell.lua
+Mop.lua
+Frame.lua
+Frame.xml

@@ -1,0 +1,47 @@
+﻿<Project DefaultTargets="Deploy" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>UltimativDotter</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66a7463e-54bc-4974-816a-0fc623ab5c8a}</ProjectGuid>
+    <AssemblyName>UltimativDotter</AssemblyName>
+    <RootNamespace>UltimativDotter</RootNamespace>
+    <AddonTitle>UltimativDotter</AddonTitle>
+    <WowPath>C:\Games\World of Warcraft\</WowPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WowAddonStudio\2.0\WowAddonStudio.targets" />
+  <ItemGroup>
+    <Content Include="Mop.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Spell.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="ultimativDotter.lua">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="UltimativDotter.toc">
+      <SubType>TableOfContents</SubType>
+    </Content>
+    <Content Include="Frame.xml">
+      <SubType>Frame</SubType>
+    </Content>
+    <Content Include="Frame.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>Frame.xml</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it. 
+		
+	<Target Name="BeforeClean"></Target>
+	<Target Name="AfterClean"></Target>
+	<Target Name="BeforeRebuild"></Target>
+	<Target Name="AfterRebuild"></Target>
+	<Target Name="BeforeDeploy"></Target>
+	<Target Name="AfterDeploy"></Target>
+	-->
+</Project>
